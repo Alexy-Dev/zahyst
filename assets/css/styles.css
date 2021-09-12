@@ -92,6 +92,18 @@ ul.grid{
 	flex-wrap: wrap;
 	justify-content: center;
 }
+.btn_aboute{
+
+}
+.btn_project{
+
+}
+.btn_contact{
+
+}
+.btn_main{
+
+}
 
 
 /*-------------
@@ -237,10 +249,29 @@ header nav li:last-child{
 .оur-work{
 	background-color: #fff;
 }
+.our-work .grid li.large_liki{
+	
+	/* display: flex; */
+	padding: 20px;
+	height: 800px;
+	
+	border-radius: 3px;
+	
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	flex-direction: column row;
+	
+	
+}
 
 .our-work .grid li{
 	padding: 20px;
-	height: 350px;
+	/* height: 800px;
+	width: 1200px; */
 	border-radius: 3px;
 
 	background-clip: content-box;
@@ -256,16 +287,29 @@ header nav li:last-child{
 .our-work .grid li.large{
 	flex-basis: 60%;
 }
+.our-work .grid li.large_liki{
+	flex-basis: 70%;
+}
+/* .our-work .grid div{
+	flex-basis: auto;
+} */
 
 
 @media (max-width: 1000px){
-
+	.our-work .grid li.large_liki,
 	.our-work .grid li.small,
 	.our-work .grid li.large{
-		flex-basis: 100%;
+		flex-basis: 80%;
 	}
 
 }
+/* @media (max-width: 600px){
+
+	.our-work .grid div{
+		flex-basis: 100%;
+	}
+
+} */
 
 
 
@@ -420,7 +464,7 @@ footer{
 	background-color: #414a4f;
 	padding: 60px 0;
 }
-
+/* 
 footer ul{
 	display: flex;
 	margin-bottom: 25px;
@@ -448,12 +492,55 @@ footer p{
 
 footer p a{
 	color: #fff;
+} */
+
+/* @media (max-width: 700px){ */
+
+	/* footer{
+		padding: 80px 15px;
+	}
+
+} */
+footer .grid li{
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
 }
 
-@media (max-width: 700px){
+/* footer .grid li i{
+    font-size: 50px;
+    color: #f34121;
+    margin-bottom: 25px;
+} */
 
-	footer{
-		padding: 80px 15px;
+footer .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+footer .grid li p{
+    margin: 25px;
+}
+
+@media (max-width: 1000px){
+
+	footer .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	footer .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	footer .grid li{
+		flex-basis: 100%;
 	}
 
 }
