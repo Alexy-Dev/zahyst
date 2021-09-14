@@ -121,6 +121,7 @@ header{
 	align-items: center;
 	color: #fff;
 	padding: 35px 100px 0;
+	animation-name: fade;animation-duration: 1.5s;}@keyframes fade{from{opacity: 0.1;}to{opacity: 1;};
 }
 
 header h2{
@@ -209,11 +210,14 @@ header nav li:last-child{
 .hero h1{
 	font: bold 60px 'Open Sans', sans-serif;
 	margin-bottom: 15px;
+	opacity: 0;
+	animation-name: fade;animation-delay: 0.5s;animation-fill-mode: forwards;animation-duration: 2.5s;}@keyframes fade{from{opacity: 0;}to{opacity: 1;};
 }
 
 .hero h3{
 	font: normal 28px 'Open Sans', sans-serif;
 	margin-bottom: 40px;
+	animation-name: fadeS;animation-duration: 3.5s;}@keyframes fadeS{from{ transform: scale(0.1, 0.1);transform: opacity(0);}to{ transform: scale(1, 1);transform: opacity(1);};
 }
 
 .hero a.btn{
