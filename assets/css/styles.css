@@ -75,15 +75,15 @@ section h3.title{
 	text-transform: capitalize; 
 	font: bold 32px 'Open Sans', sans-serif;
 	margin-bottom: 35px;
-	text-align: center;
+	text-align: left;
 }
 
 section p{
 	max-width: 800px;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 35px;
-	padding: 0 20px;
-	line-height: 2;
+	padding: 0 0px;
+	line-height: 1.2;
 }
 
 ul.grid{
@@ -121,7 +121,7 @@ header{
 	align-items: center;
 	color: #fff;
 	padding: 35px 100px 0;
-	animation-name: fade;animation-duration: 1.5s;}@keyframes fade{from{opacity: 0.1;}to{opacity: 1;};
+	animation-name: fade;animation-duration: 1s;}@keyframes fade{from{opacity: 0.1;}to{opacity: 1;};
 }
 
 header h2{
@@ -182,7 +182,7 @@ header nav li:last-child{
 	justify-content: center;
 	min-height: 100vh;
 	color: #fff;
-	text-align: center;
+	text-align: left;
 }
 
 .hero .background-image{
@@ -209,15 +209,18 @@ header nav li:last-child{
 
 .hero h1{
 	font: bold 60px 'Open Sans', sans-serif;
-	margin-bottom: 15px;
+	line-height: 1.2;
+	margin-top: 30px;
+	margin-bottom: 5px;
 	opacity: 0;
-	animation-name: fade;animation-delay: 0.5s;animation-fill-mode: forwards;animation-duration: 2.5s;}@keyframes fade{from{opacity: 0;}to{opacity: 1;};
+	animation-name: fade;animation-delay: 0.3s;animation-fill-mode: forwards;animation-duration: 1.25s;}@keyframes fade{from{opacity: 0;}to{opacity: 1;};
 }
 
 .hero h3{
 	font: normal 28px 'Open Sans', sans-serif;
+	line-height: 1.2;
 	margin-bottom: 40px;
-	animation-name: fadeS;animation-duration: 3.5s;}@keyframes fadeS{from{ transform: scale(0.1, 0.1);transform: opacity(0);}to{ transform: scale(1, 1);transform: opacity(1);};
+	animation-name: fadeS;animation-fill-mode: forwards;animation-duration: 1.5s;}@keyframes fadeS{from{ transform: scale(0.1, 0.1);transform: opacity(0);}to{ transform: scale(1, 1);transform: opacity(1);};
 }
 
 .hero a.btn{
@@ -328,7 +331,7 @@ header nav li:last-child{
 .features .grid li{
 	padding: 0 30px;
 	flex-basis: 33%;
-	text-align: center;
+	text-align: left;
 }
 
 .features .grid li i{
@@ -463,7 +466,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
+	text-align: left;
 	color: #fff;
 	background-color: #414a4f;
 	padding: 60px 0;
