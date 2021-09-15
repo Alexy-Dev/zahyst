@@ -93,7 +93,7 @@ ul.grid{
 	justify-content: center;
 }
 .btn_aboute{
-
+	white-space: nowrap;
 }
 .btn_project{
 
