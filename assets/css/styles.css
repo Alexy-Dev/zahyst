@@ -76,6 +76,7 @@ section h3.title{
 	font: bold 32px 'Open Sans', sans-serif;
 	margin-bottom: 35px;
 	text-align: left;
+	align-items: left;
 }
 
 section p{
@@ -92,18 +93,10 @@ ul.grid{
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.btn_aboute{
-	white-space: nowrap;
-}
-.btn_project{
-
-}
-.btn_contact{
-
-}
-.btn_main{
-
-}
+.btn_aboute{white-space: nowrap;}
+.btn_project{}
+.btn_contact{}
+.btn_main{}
 
 
 /*-------------
@@ -128,14 +121,6 @@ header h2{
 	font-family: 'Quicksand', sans-serif;
 	color: #f34121;
 }
-/* header div{ */
-	/* background-image: url(logo.jpg); */
-	/* z-index: 15; */
-	/* color: hsl(14, 100%, 50%);
-	font-family: 'Quicksand', sans-serif; */
-	/* color: #0099ff; */
-/* } */
-
 header nav{
 	display: flex;
 }
@@ -247,79 +232,6 @@ header nav li:last-child{
 
 }
 
-
-
-/*--------------------
- 	Our Work Section
----------------------*/
-
-.оur-work{
-	background-color: #fff;
-}
-.our-work .grid li.large_liki{
-	
-	/* display: flex; */
-	padding: 20px;
-	height: 800px;
-	
-	border-radius: 3px;
-	
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 30px;
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
-	flex-direction: column row;
-	
-	
-}
-
-.our-work .grid li{
-	padding: 20px;
-	/* height: 800px;
-	width: 1200px; */
-	border-radius: 3px;
-
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
-	background-color: #333;
-}
-
-.our-work .grid li.small{
-	flex-basis: 40%;
-}
-
-.our-work .grid li.large{
-	flex-basis: 60%;
-}
-.our-work .grid li.large_liki{
-	flex-basis: 70%;
-}
-/* .our-work .grid div{
-	flex-basis: auto;
-} */
-
-
-@media (max-width: 1000px){
-	.our-work .grid li.large_liki,
-	.our-work .grid li.small,
-	.our-work .grid li.large{
-		flex-basis: 80%;
-	}
-
-}
-/* @media (max-width: 600px){
-
-	.our-work .grid div{
-		flex-basis: 100%;
-	}
-
-} */
-
-
-
 /*----------------------
  	Features Section
 ----------------------*/
@@ -372,13 +284,72 @@ header nav li:last-child{
 
 }
 
+/*--------------------
+ 	Our Work Section
+---------------------*/
+
+.оur-work{
+	background-color: #fff;
+}
+.our-work .grid li.large_liki{
+	
+	/* display: flex; */
+	padding: 20px;
+	height: 800px;
+	
+	border-radius: 3px;
+	
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	flex-direction: column row;
+	
+	
+}
+
+.our-work .grid li{
+	padding: 20px;
+	border-radius: 3px;
+
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+.our-work .grid li.small{
+	flex-basis: 40%;
+}
+
+.our-work .grid li.large{
+	flex-basis: 60%;
+}
+.our-work .grid li.large_liki{
+	flex-basis: 70%;
+}
+
+
+@media (max-width: 1000px){
+	.our-work .grid li.large_liki,
+	.our-work .grid li.small,
+	.our-work .grid li.large{
+		flex-basis: 80%;
+	}
+
+}
+
+
+
 
 
 /*--------------------
  	Reviews Section
 --------------------*/
 
-.reviews{
+/* .reviews{
 	background-color: #fff;
 }
 
@@ -411,7 +382,7 @@ header nav li:last-child{
 	    font-size: 16px;
 	}
 
-}
+} */
 
 
 
@@ -471,54 +442,12 @@ footer{
 	background-color: #414a4f;
 	padding: 60px 0;
 }
-/* 
-footer ul{
-	display: flex;
-	margin-bottom: 25px;
-	font-size: 32px;
-}
 
-footer ul li{
-	margin: 0 8px;	
-}
-
-footer ul li:first-child{
-	margin-left: 0;	
-}
-
-footer ul li:last-child{
-	margin-right: 0;	
-}
-
-footer p{
-	text-transform: uppercase;
-	font-size: 14px;
-	color: rgba(255,255,255,0.6);
-	margin-bottom: 10px;
-}
-
-footer p a{
-	color: #fff;
-} */
-
-/* @media (max-width: 700px){ */
-
-	/* footer{
-		padding: 80px 15px;
-	}
-
-} */
 footer .grid li{
 	padding: 0 30px;
 	flex-basis: 33%;
 	text-align: center;
 }
-
-/* footer .grid li i{
-    font-size: 50px;
-    color: #f34121;
-    margin-bottom: 25px;
-} */
 
 footer .grid li h4{
 	color: #555;
@@ -548,13 +477,8 @@ footer .grid li p{
 
 	footer .grid li{
 		flex-basis: 100%;
+		
 	}
 
 }
 
-
-/* -- Demo ads -- */
-
-@media (max-width: 1200px) {
-	#bsaHolder{ display:none;}
-}
